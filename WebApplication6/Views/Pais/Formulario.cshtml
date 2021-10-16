@@ -5,6 +5,15 @@
 
     IdPais:<input type="text" name="IdPais" value="@Model.IdPais"/><br/>
     Nombre:<input type="text" name="Nombre" value="@Model.Nombre"/><br/>
+
+    Cliente:<select name="XXXX">
+        <option>--Seleccione un cliente</option>
+        @foreach (var cliente in ViewBag.clientes)
+            {
+                    <option value="@cliente.IdCliente">@cliente.Nombre</option>
+            }
+    </select><br/>
+
     <input type="submit"/>
 
 </form>

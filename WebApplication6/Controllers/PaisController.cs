@@ -29,6 +29,8 @@ namespace WebApplication6.Controllers
         public IActionResult Formulario()
         {
             var pais=new Pais();
+            ViewBag.clientes=ClienteRepo.Listar();
+
             return View(pais);
         }
 
