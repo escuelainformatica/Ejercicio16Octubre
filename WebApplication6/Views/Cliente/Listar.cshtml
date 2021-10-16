@@ -1,0 +1,11 @@
+﻿@model List<WebApplication6.dto.ClienteDto>
+
+<table border=1>
+    @foreach(var cliente in Model)
+    {
+        <tr>
+            <td>@cliente.IdCliente</td>
+            <td>@cliente.NombreCompleto </td>
+        </tr>
+    }
+</table>
